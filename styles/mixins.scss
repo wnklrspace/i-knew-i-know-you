@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+// Mediaquery mixins
+@mixin x-small() {
+  @media only screen and (min-width: map-get($grid-breakpoints, xs)){
+    @content;
+  }
+}
+
+@mixin small() {
+  @media only screen and (min-width: map-get($grid-breakpoints, sm)){
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media only screen and (min-width: map-get($grid-breakpoints, md)){
+    @content;
+  }
+}
+
+@mixin large() {
+  @media only screen and (min-width: map-get($grid-breakpoints, lg)){
+    @content;
+  }
+}
+
+@mixin x-large() {
+  @media only screen and (min-width: map-get($grid-breakpoints, xl)){
+    @content;
+  }
+}
