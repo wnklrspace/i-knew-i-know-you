@@ -1,5 +1,8 @@
-import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
+
+// bootstrap grid styles
+import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
+import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />

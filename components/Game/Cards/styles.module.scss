@@ -1,0 +1,32 @@
+@import '../../../styles/variables.scss';
+
+.cardstack {
+  position: relative;
+  width: 50vw;
+  height: 60vh;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__card {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: $color-white;
+
+    &:nth-child(1) {
+      transform: rotate(10deg);
+    }
+  }
+
+  &__question {
+    font-size: calc(32px + .1vw);
+    display: inline-flex;
+    color: $color-grey-dark;
+    z-index: 100;
+  }
+}

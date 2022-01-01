@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+.game {
+  height: 100vh;
+  width: 100vw;
+  background-color: $color-grey-dark;
+  overscroll-behavior: none;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
