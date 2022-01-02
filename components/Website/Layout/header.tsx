@@ -24,41 +24,50 @@ export const Header: React.FunctionComponent<Props> = (props) => {
       <header className={ layout.header }>
         <Section hasBottom={ false }>
           <Container>
-            <Link href='./'>
-              <a>
-                I K I K Y
-              </a>
-            </Link>
-            <ul className={ layout.nav }>
-              <li>
-                <Link href='/support'>
-                  <a>
-                    Support
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href='/game'>
-                  <a>
-                    Play Game
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href='/profile'>
-                  <a>
-                    Log In
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href='/sign-up'>
-                  <a>
-                    Sign Up
-                  </a>
-                </Link>
-              </li>
-            </ul>
+            <div className={ layout.nav }>
+              <Link href='./'>
+                <a>
+                  I K I K Y
+                </a>
+              </Link>
+              <ul>
+                <li>
+                  <Link href='/idea'>
+                    <a>
+                      Idea
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/support'>
+                    <a>
+                      Support
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/game'>
+                    <a>
+                      Play Game
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/profile'>
+                    <a>
+                      Log In
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/sign-up'>
+                    <a>
+                      Sign Up
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </Container>
         </Section>
       </header>

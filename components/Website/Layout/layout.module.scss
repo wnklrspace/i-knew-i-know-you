@@ -87,12 +87,24 @@
 }
 
 .nav {
+  height: 80px;
   display: flex;
   flex-direction: row;
-  height: 80px;
+  align-items: center;
+  justify-content: space-between;
 
-  a {
-    height: 40px;
-    padding: 0 15px;
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    a {
+      height: 40px;
+      padding: 10px 15px;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #eee;
+      }
+    }
   }
 }

@@ -16,7 +16,7 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
   return (
     <>
       <footer>
-        <Section hasBottom={ false }>
+        <Section>
           <Container>
             <Row>
               <Col md={ 3 }>
