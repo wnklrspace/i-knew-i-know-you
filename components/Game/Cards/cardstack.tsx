@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import cards from './styles.module.scss'
+import cards from './cards.module.scss'
 
 interface Props {
   question?: string,

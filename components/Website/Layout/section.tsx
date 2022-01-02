@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import layout from './styles.module.scss'
+import layout from './layout.module.scss'
 
 interface Props {
   children?: any,

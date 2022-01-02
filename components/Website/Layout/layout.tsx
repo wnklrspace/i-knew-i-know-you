@@ -1,6 +1,6 @@
 import { Header } from '.'
 import { Footer } from './footer'
-import styles from './styles.module.scss'
+import layout from './layout.module.scss'
 
 interface Props {
   children: object,
@@ -17,7 +17,7 @@ export const Layout: React.FunctionComponent<Props> = (props) => {
   return (
     <>
       <Header />
-        <main className={ styles.main }>
+        <main className={ layout.main }>
           { children }
         </main>
       <Footer />

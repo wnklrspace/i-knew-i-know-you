@@ -1,0 +1,25 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.filter-btn {
+  position: fixed;
+  top: gap(3);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.filter-container {
+  position: fixed;
+  height: 50vh;
+  // background: url('../../../public/card-background.jpg');
+  background-color: $color-white;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid $color-grey-dark;
+  display: none;
+
+  &--active {
+    display: flex;
+  }
+}

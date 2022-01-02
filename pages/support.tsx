@@ -30,7 +30,7 @@ const Support: NextPage = () => {
             <Row>
               <Col md={ 8 }>
                 <p>
-                  With this project we want to support ...
+                  With this project we want to support [Organization goes here]. <br />
                   You can pay any amount that you can afford, starting at 1€ and help families and children who cannot afford
                   technological devices for their education easily.
                   In exchange you will not only be helping those people, you will get the premium version of IKIKY, featuring not only more cards and

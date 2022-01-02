@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { Row, Col } from 'reactstrap'
 import { Section, Container } from '.'
-import styles from './styles.module.scss'
+import layout from './layout.module.scss'
 interface Props {
   backgroundColor?: string,
 }

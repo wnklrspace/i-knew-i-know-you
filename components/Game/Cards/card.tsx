@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import styles from './styles.module.scss'
+import cards from './cards.module.scss'
 
 interface Props {
   background?: string,
@@ -15,11 +15,11 @@ export const Card: React.FunctionComponent<Props> = ({
   alignment = 'justifyCenter',
   isCard = true
 }) => {
-  const cardClass = classNames(styles.card, {
-    [styles['card--transparent']]: background === 'transparent',
-    [styles['card--white']]: background === 'white',
-    [styles['card--no-card-style']]: !isCard,
-    [styles['card--justify-center']]: alignment === 'justifyCenter',
+  const cardClass = classNames(cards.card, {
+    [cards['card--transparent']]: background === 'transparent',
+    [cards['card--white']]: background === 'white',
+    [cards['card--no-card-style']]: !isCard,
+    [cards['card--justify-center']]: alignment === 'justifyCenter',
   });
 
   return (

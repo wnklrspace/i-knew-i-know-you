@@ -1,0 +1,16 @@
+@import '../variables.scss';
+
+.profile {
+  background-color: $color-white;
+  overscroll-behavior: none;
+  color: $color-grey-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: fixed;
+  left: gap(3);
+  top: gap(3)
+}

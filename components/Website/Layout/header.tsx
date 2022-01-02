@@ -6,7 +6,7 @@ import {
   Section,
   Container
 } from '.'
-import styles from './styles.module.scss'
+import layout from './layout.module.scss'
 
 
 interface Props {
@@ -21,7 +21,7 @@ export const Header: React.FunctionComponent<Props> = (props) => {
 
   return (
     <>
-      <header className={ styles.header }>
+      <header className={ layout.header }>
         <Section hasBottom={ false }>
           <Container>
             <Link href='./'>
@@ -29,16 +29,36 @@ export const Header: React.FunctionComponent<Props> = (props) => {
                 I K I K Y
               </a>
             </Link>
-            <Link href='/support'>
-              <a>
-                Support
-              </a>
-            </Link>
-            <Link href='/game'>
-              <a>
-                Play Game
-              </a>
-            </Link>
+            <ul className={ layout.nav }>
+              <li>
+                <Link href='/support'>
+                  <a>
+                    Support
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href='/game'>
+                  <a>
+                    Play Game
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href='/profile'>
+                  <a>
+                    Log In
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href='/sign-up'>
+                  <a>
+                    Sign Up
+                  </a>
+                </Link>
+              </li>
+            </ul>
           </Container>
         </Section>
       </header>
