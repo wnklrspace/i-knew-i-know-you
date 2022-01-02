@@ -18,11 +18,45 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
       <footer>
         <Section hasBottom={ false }>
           <Container>
-            <Link href='./'>
-              <a>
-                I K I K Y
-              </a>
-            </Link>
+            <Row>
+              <Col md={ 3 }>
+                <Link href='./'>
+                  <a>
+                    I K I K Y
+                  </a>
+                </Link>
+              </Col>
+              <Col md={ 3 }>
+                <ul>
+                  <li>
+                    <Link href='/support'>
+                      <a>
+                        Support
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </Col>
+              <Col md={ 3 }></Col>
+              <Col md={ 3 }>
+                <ul>
+                  <li>
+                    <Link href='#'>
+                      <a>
+                        Credits
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='#'>
+                      <a>
+                        Idea
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </Col>
+            </Row>
           </Container>
         </Section>
       </footer>
