@@ -26,8 +26,8 @@ export const Header: React.FunctionComponent<Props> = (props) => {
           <Container>
             <div className={ layout.nav }>
               <Link href='./'>
-                <a>
-                  I K I K Y
+                <a className='logo'>
+                  I K<span>NEW</span> I K<span>NOW</span> Y<span>OU</span>
                 </a>
               </Link>
               <ul>
@@ -52,6 +52,8 @@ export const Header: React.FunctionComponent<Props> = (props) => {
                     </a>
                   </Link>
                 </li>
+              </ul>
+              <ul>
                 <li>
                   <Link href='/profile'>
                     <a>
